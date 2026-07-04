@@ -257,23 +257,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-border-pale-red,.w3-hover-border-pale-red:hover{border-color:#ffe7e7!important}.w3-border-pale-green,.w3-hover-border-pale-green:hover{border-color:#e7ffe7!important}
 .w3-border-pale-yellow,.w3-hover-border-pale-yellow:hover{border-color:#ffffcc!important}.w3-border-pale-blue,.w3-hover-border-pale-blue:hover{border-color:#e7ffff!important}
 </style>
-<script>(function() {
-        var param = 'fbclid';
-        if (location.search.indexOf(param + '=') !== -1) {
-                var replace = '';
-                try {
-                        var url = new URL(location);
-                        url.searchParams.delete(param);
-                        replace = url.href;
-                } catch (ex) {
-                        var regExp = new RegExp('[?&]' + param + '=.*$');
-                        replace = location.search.replace(regExp, '');
-                        replace = location.pathname + replace + location.hash;
-                }
-                history.replaceState(null, '', replace);
-        }
-})();</script>
-<style>
+<script src="https://cdn.ikh.media/js/no-facebook.js"></script>
 body,h1 {font-family: Arial, sans-serif;}
 body, html {height: 100%}
 .bgimg {
